@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <title>Brian Nguyen - Links</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+
+    <script>
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", 'http://178.62.116.15:8181/view', true);
+    //xhr.setRequestHeader("Content-type", "multipart/form-data");
+    xhr.onreadystatechange = function() {
+    if(xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200) {
+        // Request finished. Do processing here.
+        }
+    }
+    xhr.send("title=" + document.title + "&url=" + document.baseURI + "&referrer=" + document.referrer);
+</script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="header">
+            <h1>
+                <span class="title"><a href="index.html">Chris Hannah</a> <h2>Writing</h2><span class="blinking-cursor">&#9122;</span></span>
+            </h1>
+        </div>
+
+        <div id="navigation">
+            <ul>
+                <li><a href="about.html">&#x1F913; About</a></li>
+                <li><a href="work.html">&#x1F4BB; Work</a></li>
+                <li><a href="http://micro.chrishannah.me">&#x1F4D3; Micro Blog</a></li>
+                <li><a href="http://blog.chrishannah.me">&#x1F4DD; Blog</a></li>
+                <li><a href="contact.html">&#x1F4C7; Contact</a></li>
+            </ul>
+        </div>
+        <div id="writing" class="content">
+
+
+            <p>As a writer, I am always looking for more opportunities to write for other blogs, publishers, etc. So here are a few of my favourite pieces that I have written:</p>
+            <br>
+            <h2>News/Reviews</h2>
+            <ul><li><a href="http://blog.chrishannah.me/squash-2/">Squash 2</a>
+            </li><li><a href="http://blog.chrishannah.me/writing-with-bear/">Writing With Bear</a>
+            </li><li><a href="http://blog.chrishannah.me/splitting-the-bill-with-monzo/">Splitting The Bill with Monzo</a>
+            </li></ul>
+            <h2>Stories</h2>
+            <ul><li><a href="https://medium.com/@chrishannah/being-late-to-the-party-a75713bb279a#.95pyc779f">Being Late to the Party</a>
+            </li><li><a href="https://medium.com/@chrishannah/diversity-in-tech-f271a249b2ea#.wm549p56x">Diversity in Tech</a>
+            </li></ul>
+            <h2>Guides</h2>
+            <ul><li><a href="http://blog.chrishannah.me/putting-your-xcode-project-on-github-the-easy-way/">Putting Your Xcode Project on GitHub the Easy Way</a>
+            </li><li><a href="http://blog.chrishannah.me/open-apps-from-unidentified-developers-on-macos/">Open Apps From Unidentified Developers on macOS</a>
+            </li><li><a href="http://blog.chrishannah.me/how-to-download-your-entire-itunes-music-library/">How To: Download Your Entire iTunes Music Library</a>
+            </li></ul>
+            <h2>Opinion</h2>
+            <ul><li><a href="http://blog.chrishannah.me/my-thoughts-on-the-new-macbook-pro/">My Thoughts on the new MacBook Pro</a>
+            </li><li><a href="https://medium.com/@chrishannah/ive-turned-my-notifications-off-bb1627e4a4df#.k6wc8k8w0">I’ve Turned My Notifications Off</a></li></ul>
+
+        </div>
+
+        <div id="footer"></div>
+
+
+    </div>
+
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100283201-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+
+</html>
